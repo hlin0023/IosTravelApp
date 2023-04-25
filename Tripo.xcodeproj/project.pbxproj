@@ -13,6 +13,11 @@
 		365CA9F229F79CF10098DD7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365CA9F029F79CF10098DD7A /* Main.storyboard */; };
 		365CA9F429F79CF20098DD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365CA9F329F79CF20098DD7A /* Assets.xcassets */; };
 		365CA9F729F79CF20098DD7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365CA9F529F79CF20098DD7A /* LaunchScreen.storyboard */; };
+		365CA9FF29F7A35C0098DD7A /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365CA9FE29F7A35C0098DD7A /* SignViewController.swift */; };
+		367D0B8229F7B3F7004828A3 /* sign.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 367D0B8129F7B3F7004828A3 /* sign.mp4 */; };
+		367D0B8529F7C4C4004828A3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 367D0B8429F7C4C4004828A3 /* FirebaseAuth */; };
+		367D0B8729F7C4C4004828A3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 367D0B8629F7C4C4004828A3 /* FirebaseFirestore */; };
+		367D0B8929F7C4C4004828A3 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 367D0B8829F7C4C4004828A3 /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,8 @@
 		365CA9F329F79CF20098DD7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		365CA9F629F79CF20098DD7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		365CA9F829F79CF20098DD7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365CA9FE29F7A35C0098DD7A /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		367D0B8129F7B3F7004828A3 /* sign.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sign.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				367D0B8529F7C4C4004828A3 /* FirebaseAuth in Frameworks */,
+				367D0B8729F7C4C4004828A3 /* FirebaseFirestore in Frameworks */,
+				367D0B8929F7C4C4004828A3 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +73,8 @@
 				365CA9F329F79CF20098DD7A /* Assets.xcassets */,
 				365CA9F529F79CF20098DD7A /* LaunchScreen.storyboard */,
 				365CA9F829F79CF20098DD7A /* Info.plist */,
+				365CA9FE29F7A35C0098DD7A /* SignViewController.swift */,
+				367D0B8129F7B3F7004828A3 /* sign.mp4 */,
 			);
 			path = Tripo;
 			sourceTree = "<group>";
@@ -83,6 +95,11 @@
 			dependencies = (
 			);
 			name = Tripo;
+			packageProductDependencies = (
+				367D0B8429F7C4C4004828A3 /* FirebaseAuth */,
+				367D0B8629F7C4C4004828A3 /* FirebaseFirestore */,
+				367D0B8829F7C4C4004828A3 /* FirebaseFirestoreSwift */,
+			);
 			productName = Tripo;
 			productReference = 365CA9E729F79CF10098DD7A /* Tripo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 365CA9DE29F79CF00098DD7A;
+			packageReferences = (
+				367D0B8329F7C4C4004828A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 365CA9E829F79CF10098DD7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +147,7 @@
 			files = (
 				365CA9F729F79CF20098DD7A /* LaunchScreen.storyboard in Resources */,
 				365CA9F429F79CF20098DD7A /* Assets.xcassets in Resources */,
+				367D0B8229F7B3F7004828A3 /* sign.mp4 in Resources */,
 				365CA9F229F79CF10098DD7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +162,7 @@
 				365CA9EF29F79CF10098DD7A /* ViewController.swift in Sources */,
 				365CA9EB29F79CF10098DD7A /* AppDelegate.swift in Sources */,
 				365CA9ED29F79CF10098DD7A /* SceneDelegate.swift in Sources */,
+				365CA9FF29F7A35C0098DD7A /* SignViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +378,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		367D0B8329F7C4C4004828A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		367D0B8429F7C4C4004828A3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 367D0B8329F7C4C4004828A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		367D0B8629F7C4C4004828A3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 367D0B8329F7C4C4004828A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		367D0B8829F7C4C4004828A3 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 367D0B8329F7C4C4004828A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 365CA9DF29F79CF00098DD7A /* Project object */;
 }
