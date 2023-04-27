@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		362D110729F91F660080BD8B /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362D110629F91F660080BD8B /* ToolsViewController.swift */; };
+		362D110929F923750080BD8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 362D110829F923750080BD8B /* GoogleService-Info.plist */; };
+		362D110B29F924530080BD8B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362D110A29F924530080BD8B /* User.swift */; };
+		362D110D29F925230080BD8B /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362D110C29F925230080BD8B /* FirebaseController.swift */; };
+		362D110F29F925720080BD8B /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362D110E29F925720080BD8B /* DatabaseProtocol.swift */; };
+		362D111229F9279D0080BD8B /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362D111129F9279D0080BD8B /* MulticastDelegate.swift */; };
 		365CA9EB29F79CF10098DD7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365CA9EA29F79CF10098DD7A /* AppDelegate.swift */; };
 		365CA9ED29F79CF10098DD7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365CA9EC29F79CF10098DD7A /* SceneDelegate.swift */; };
 		365CA9EF29F79CF10098DD7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365CA9EE29F79CF10098DD7A /* ViewController.swift */; };
@@ -21,6 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		362D110629F91F660080BD8B /* ToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
+		362D110829F923750080BD8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		362D110A29F924530080BD8B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		362D110C29F925230080BD8B /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		362D110E29F925720080BD8B /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
+		362D111129F9279D0080BD8B /* MulticastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
 		365CA9E729F79CF10098DD7A /* Tripo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		365CA9EA29F79CF10098DD7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		365CA9EC29F79CF10098DD7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		362D111029F9277A0080BD8B /* ds */ = {
+			isa = PBXGroup;
+			children = (
+				362D110E29F925720080BD8B /* DatabaseProtocol.swift */,
+				362D111129F9279D0080BD8B /* MulticastDelegate.swift */,
+			);
+			path = ds;
+			sourceTree = "<group>";
+		};
 		365CA9DE29F79CF00098DD7A = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +87,7 @@
 		365CA9E929F79CF10098DD7A /* Tripo */ = {
 			isa = PBXGroup;
 			children = (
+				362D111029F9277A0080BD8B /* ds */,
 				365CA9EA29F79CF10098DD7A /* AppDelegate.swift */,
 				365CA9EC29F79CF10098DD7A /* SceneDelegate.swift */,
 				365CA9EE29F79CF10098DD7A /* ViewController.swift */,
@@ -75,6 +97,10 @@
 				365CA9F829F79CF20098DD7A /* Info.plist */,
 				365CA9FE29F7A35C0098DD7A /* SignViewController.swift */,
 				367D0B8129F7B3F7004828A3 /* sign.mp4 */,
+				362D110629F91F660080BD8B /* ToolsViewController.swift */,
+				362D110829F923750080BD8B /* GoogleService-Info.plist */,
+				362D110A29F924530080BD8B /* User.swift */,
+				362D110C29F925230080BD8B /* FirebaseController.swift */,
 			);
 			path = Tripo;
 			sourceTree = "<group>";
@@ -147,6 +173,7 @@
 			files = (
 				365CA9F729F79CF20098DD7A /* LaunchScreen.storyboard in Resources */,
 				365CA9F429F79CF20098DD7A /* Assets.xcassets in Resources */,
+				362D110929F923750080BD8B /* GoogleService-Info.plist in Resources */,
 				367D0B8229F7B3F7004828A3 /* sign.mp4 in Resources */,
 				365CA9F229F79CF10098DD7A /* Main.storyboard in Resources */,
 			);
@@ -160,9 +187,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				365CA9EF29F79CF10098DD7A /* ViewController.swift in Sources */,
+				362D110D29F925230080BD8B /* FirebaseController.swift in Sources */,
+				362D110729F91F660080BD8B /* ToolsViewController.swift in Sources */,
+				362D110B29F924530080BD8B /* User.swift in Sources */,
 				365CA9EB29F79CF10098DD7A /* AppDelegate.swift in Sources */,
+				362D110F29F925720080BD8B /* DatabaseProtocol.swift in Sources */,
 				365CA9ED29F79CF10098DD7A /* SceneDelegate.swift in Sources */,
 				365CA9FF29F7A35C0098DD7A /* SignViewController.swift in Sources */,
+				362D111229F9279D0080BD8B /* MulticastDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

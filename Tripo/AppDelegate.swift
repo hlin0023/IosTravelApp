@@ -10,10 +10,16 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var databaseController: DatabaseProtocol?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //week 4: databaseController = CoreDataController()
+        
+        //week6
+        databaseController = FirebaseController()
+      
         return true
     }
 
@@ -33,4 +39,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-
