@@ -275,12 +275,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfe-5M-Uph">
-                                <rect key="frame" x="40" y="354" width="29" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0p-G2-tsM">
                                 <rect key="frame" x="40" y="218" width="94" height="35"/>
                                 <state key="normal" title="Button"/>
@@ -289,8 +283,15 @@
                                     <action selector="translate:" destination="KBy-AM-TEL" eventType="touchUpInside" id="Acw-VK-1OR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translate into:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQF-2q-3hT">
-                                <rect key="frame" x="40" y="303" width="108" height="21"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Click Translate button to get text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f4L-Fb-Xx0">
+                                <rect key="frame" x="40" y="344" width="300" height="454"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translate into Chinese:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQF-2q-3hT">
+                                <rect key="frame" x="40" y="303" width="174" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -299,26 +300,27 @@
                         <viewLayoutGuide key="safeArea" id="1jZ-NW-73e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kfe-5M-Uph" firstAttribute="leading" secondItem="1jZ-NW-73e" secondAttribute="leading" constant="40" id="0wd-CP-8hF"/>
                             <constraint firstItem="TRm-t3-lmJ" firstAttribute="leading" secondItem="e0p-G2-tsM" secondAttribute="leading" id="1BR-z8-gPl"/>
+                            <constraint firstItem="f4L-Fb-Xx0" firstAttribute="trailing" secondItem="Fps-hr-4pH" secondAttribute="trailing" id="6UH-3b-StX"/>
                             <constraint firstItem="VQF-2q-3hT" firstAttribute="leading" secondItem="1jZ-NW-73e" secondAttribute="leading" constant="40" id="85A-z7-D3t"/>
                             <constraint firstItem="1jZ-NW-73e" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="e0p-G2-tsM" secondAttribute="trailing" symbolic="YES" id="HMz-yh-FXT"/>
                             <constraint firstItem="e0p-G2-tsM" firstAttribute="leading" secondItem="1jZ-NW-73e" secondAttribute="leading" constant="40" id="LZP-cA-PQh"/>
                             <constraint firstItem="Fps-hr-4pH" firstAttribute="top" secondItem="TRm-t3-lmJ" secondAttribute="bottom" constant="20" id="PbQ-UI-Zd3"/>
+                            <constraint firstItem="1jZ-NW-73e" firstAttribute="bottom" secondItem="f4L-Fb-Xx0" secondAttribute="bottom" constant="20" id="Q9x-51-BcJ"/>
+                            <constraint firstItem="f4L-Fb-Xx0" firstAttribute="top" secondItem="VQF-2q-3hT" secondAttribute="bottom" constant="20" id="Vfc-LC-GaV"/>
                             <constraint firstItem="e0p-G2-tsM" firstAttribute="top" secondItem="Fps-hr-4pH" secondAttribute="bottom" constant="20" id="Ygl-28-gHt"/>
                             <constraint firstItem="Fps-hr-4pH" firstAttribute="leading" secondItem="1jZ-NW-73e" secondAttribute="leading" constant="40" id="cD1-3t-9S5"/>
                             <constraint firstItem="VQF-2q-3hT" firstAttribute="top" secondItem="e0p-G2-tsM" secondAttribute="bottom" constant="50" id="hSO-zk-gro"/>
                             <constraint firstItem="TRm-t3-lmJ" firstAttribute="leading" secondItem="Fps-hr-4pH" secondAttribute="leading" id="tFI-N8-swX"/>
+                            <constraint firstItem="f4L-Fb-Xx0" firstAttribute="leading" secondItem="1jZ-NW-73e" secondAttribute="leading" constant="40" id="vA1-MH-aNC"/>
                             <constraint firstItem="1jZ-NW-73e" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VQF-2q-3hT" secondAttribute="trailing" symbolic="YES" id="wAY-fP-KjW"/>
-                            <constraint firstItem="1jZ-NW-73e" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kfe-5M-Uph" secondAttribute="trailing" symbolic="YES" id="wfF-yt-Y2C"/>
-                            <constraint firstItem="kfe-5M-Uph" firstAttribute="top" secondItem="VQF-2q-3hT" secondAttribute="bottom" constant="30" id="xGA-hz-eM8"/>
                             <constraint firstItem="TRm-t3-lmJ" firstAttribute="top" secondItem="1jZ-NW-73e" secondAttribute="top" constant="20" id="zPy-Mp-FnU"/>
                             <constraint firstItem="1jZ-NW-73e" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TRm-t3-lmJ" secondAttribute="trailing" symbolic="YES" id="zVE-RX-SEe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ija-FT-LDF"/>
                     <connections>
-                        <outlet property="ouputText" destination="kfe-5M-Uph" id="1Cf-L6-M0m"/>
+                        <outlet property="outputText" destination="f4L-Fb-Xx0" id="mW4-9H-vyv"/>
                         <outlet property="userInput" destination="Fps-hr-4pH" id="eFs-AI-CbG"/>
                     </connections>
                 </viewController>
