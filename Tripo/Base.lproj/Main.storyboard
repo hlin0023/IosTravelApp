@@ -170,6 +170,9 @@
                                     <constraint firstAttribute="height" constant="80" id="KR1-6i-emJ"/>
                                 </constraints>
                                 <buttonConfiguration key="configuration" style="filled" image="dollarsign.arrow.circlepath" catalog="system" title=" Currency"/>
+                                <connections>
+                                    <segue destination="iYa-Zh-4Bj" kind="show" id="5pw-6T-YBF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrE-Qz-ZzC">
                                 <rect key="frame" x="220" y="303" width="140" height="80"/>
@@ -253,7 +256,23 @@
             </objects>
             <point key="canvasLocation" x="3146" y="535"/>
         </scene>
-        <!--Translating-->
+        <!--Currency-->
+        <scene sceneID="ZZe-x8-SYT">
+            <objects>
+                <viewController title="Currency" id="iYa-Zh-4Bj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Nm-0O-pgE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZIk-Dm-NC3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Currency" id="Sgy-QK-kya"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBP-yQ-OPN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4018" y="1231"/>
+        </scene>
+        <!--Ttanslator-->
         <scene sceneID="yNz-Qi-HNN">
             <objects>
                 <viewController id="KBy-AM-TEL" customClass="Translating" customModule="Tripo" customModuleProvider="target" sceneMemberID="viewController">
@@ -318,7 +337,7 @@
                             <constraint firstItem="1jZ-NW-73e" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TRm-t3-lmJ" secondAttribute="trailing" symbolic="YES" id="zVE-RX-SEe"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ija-FT-LDF"/>
+                    <navigationItem key="navigationItem" title="Ttanslator" id="ija-FT-LDF"/>
                     <connections>
                         <outlet property="outputText" destination="f4L-Fb-Xx0" id="mW4-9H-vyv"/>
                         <outlet property="userInput" destination="Fps-hr-4pH" id="eFs-AI-CbG"/>
