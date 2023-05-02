@@ -117,7 +117,7 @@ class FirebaseController: NSObject, DatabaseProtocol {
         usersRef = database.collection("Users")
         usersRef?.addSnapshotListener() {
             (querySnapshot, error) in
-            guard let querySnapshot = querySnapshot else {
+            guard querySnapshot != nil else {
                 print("Failed to fetch documents with error: \(String(describing: error))")
                 return
             }

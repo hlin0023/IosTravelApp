@@ -24,6 +24,7 @@
 		367D0B8529F7C4C4004828A3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 367D0B8429F7C4C4004828A3 /* FirebaseAuth */; };
 		367D0B8729F7C4C4004828A3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 367D0B8629F7C4C4004828A3 /* FirebaseFirestore */; };
 		367D0B8929F7C4C4004828A3 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 367D0B8829F7C4C4004828A3 /* FirebaseFirestoreSwift */; };
+		BAA3585A2A00FBB100158F0E /* Translating.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA358592A00FBB100158F0E /* Translating.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		365CA9F829F79CF20098DD7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		365CA9FE29F7A35C0098DD7A /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		367D0B8129F7B3F7004828A3 /* sign.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sign.mp4; sourceTree = "<group>"; };
+		BAA358592A00FBB100158F0E /* Translating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translating.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				362D110829F923750080BD8B /* GoogleService-Info.plist */,
 				362D110A29F924530080BD8B /* User.swift */,
 				362D110C29F925230080BD8B /* FirebaseController.swift */,
+				BAA358592A00FBB100158F0E /* Translating.swift */,
 			);
 			path = Tripo;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				365CA9EB29F79CF10098DD7A /* AppDelegate.swift in Sources */,
 				362D110F29F925720080BD8B /* DatabaseProtocol.swift in Sources */,
 				365CA9ED29F79CF10098DD7A /* SceneDelegate.swift in Sources */,
+				BAA3585A2A00FBB100158F0E /* Translating.swift in Sources */,
 				365CA9FF29F7A35C0098DD7A /* SignViewController.swift in Sources */,
 				362D111229F9279D0080BD8B /* MulticastDelegate.swift in Sources */,
 			);
@@ -346,8 +350,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,8 +379,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
