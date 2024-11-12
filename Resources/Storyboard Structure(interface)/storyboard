@@ -1,0 +1,12 @@
+Structure: 
+
+
+        Navigation Controller --- Login Page ---- Tab Bar Controller ------- Home -- UI TableView
+                                                                      |----- Plan 
+                                                                      |----- Entertainment
+                                                                      |----- Friends(Discussion)
+                                                                      |----- Tools ------ Translator
+                                                                                   |----- Safety 
+                                                                                   |----- Currency
+                                                                                   |----- Weather
+                                                                                   |----- Help 
